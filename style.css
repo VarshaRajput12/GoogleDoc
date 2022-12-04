@@ -178,11 +178,11 @@ button {
 }
 
 .fileItems{
-  margin-left: 7%;
+  margin-left: 5%;
 }
 
 .editItems{
-  margin-left: 12%;
+  margin-left: 8.5%;
 }
 
 .editItems p{
@@ -191,7 +191,7 @@ button {
 }
 
 .viewItems{
-  margin-left: 17%;
+  margin-left: 12%;
 }
 
 .move{
@@ -200,11 +200,11 @@ button {
 
 .toolItems{
   
-  margin-left: 22%;
+  margin-left: 16%;
 }
 
 .helpItems{
-  margin-left: 28%;
+  margin-left: 20%;
 }
 
 .helpItems input{
@@ -218,7 +218,7 @@ button {
 }
 
 .margin_top{
-  margin-top: 5.5%;
+  margin-top: 4%;
 }
 
 .boxSize{
