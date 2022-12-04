@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+body{
+  background: #f6f7f8;
+}
+
 i {
   cursor: pointer;
   margin: 0 10px;
@@ -16,6 +20,7 @@ header {
   padding: 1em;
   border-bottom: 0.5px solid rgb(210, 203, 203);
   color: rgb(78, 74, 74);
+  background-color: white;
 }
 
 .mainContainer {
@@ -125,6 +130,11 @@ button {
   box-shadow: 0px 0px 4px rgb(174, 169, 169);
   line-height: 18px;
   display: none;
+  position: absolute;
+  background: white;
+  margin-top: 2%;
+  margin-left: 24%;
+  z-index: 10;
 }
 
 .cloud .inner {
@@ -153,6 +163,76 @@ button {
   margin-top: 8px;
 }
 
+.driveItems{
+  margin-left: 18%;
+  margin-top: 2%;
+}
+
+.driveItems h4{
+  margin-left: 15px;
+}
+.driveItems button{
+  background: #1a73e8;
+  float: right;
+  color: white;
+}
+
+.fileItems{
+  margin-left: 7%;
+}
+
+.editItems{
+  margin-left: 12%;
+}
+
+.editItems p{
+  display: flex;
+  justify-content: space-between;
+}
+
+.viewItems{
+  margin-left: 17%;
+}
+
+.move{
+  margin-left: 45px;
+}
+
+.toolItems{
+  
+  margin-left: 22%;
+}
+
+.helpItems{
+  margin-left: 28%;
+}
+
+.helpItems input{
+  border: none;
+  outline: none;
+  background: #e3ecf7;
+  padding: 8px 15px;
+  width: 90%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.margin_top{
+  margin-top: 5.5%;
+}
+
+.boxSize{
+  box-shadow: 0px 0px 4px rgb(144, 139, 139);
+  line-height: 35px;
+  position: absolute;
+  width:300px;
+  background: white;
+  z-index: 10;
+  padding: 15px;
+  display: none;
+  
+}
+
 /* -------------------------------------------------------------------------main----------------------------------------------------------------------- */
 
 main {
@@ -173,9 +253,14 @@ textarea{
     height: 100vh;
     position: absolute;
     font-size: 1em;
- 
+    
     
 }
+
+p{
+  cursor: pointer;
+}
+
 
 /*------------------------------------------------------- mediaQuery for tab view--------------------------------------------------------------- */
 

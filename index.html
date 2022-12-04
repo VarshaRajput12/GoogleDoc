@@ -27,51 +27,147 @@
 
           <div class="content">
             <div class="questions">
-                <h3>Web JavaScript</h3>
-                <i class="fa-solid fa-star hover hidden visible" id="star"></i>
-                <i class="fa-brands fa-google-drive hover hidden visible"></i>
-                <i class="fa-solid fa-circle-exclamation hover hidden visible" id="arrow"></i>
-                <i class="fa-solid fa-cloud-arrow-up hover hidden visible" id="cloud"></i>
+              <h3>Web JavaScript</h3>
+              <i class="fa-solid fa-star hover hidden visible" id="star"></i>
+              <i class="fa-brands fa-google-drive hover hidden visible" id="drive"></i>
+              <i
+                class="fa-solid fa-circle-exclamation hover hidden visible"
+                id="arrow"
+              ></i>
+              <i
+                class="fa-solid fa-cloud-arrow-up hover hidden visible"
+                id="cloud"
+              ></i>
             </div>
             <div class="buttons hidden visible">
-              <button class="btn hover" id="btns">File</button>
-              <button class="btn hover">Edit</button>
-              <button class="btn hover">View</button>
-              <button class="btn hover">Insert</button>
-              <button class="btn hover">Format</button>
-              <button class="btn hover">Tools</button>
-              <button class="btn hover">Extensions</button>
-              <button class="btn hover">Help</button>
+              <button class="btn hover" id="file">File</button>
+              <button class="btn hover" id="edit">Edit</button>
+              <button class="btn hover" id="view">View</button>
+              <button class="btn hover" id="tools">Tools</button>
+              <button class="btn hover" id="help">Help</button>
             </div>
           </div>
         </div>
-        <!----------------------------------------- popUpThings------------------------------------ -->
+        <!------------------------------------------------starting of dialogue boxes---------------------------------------------- -->
+
+        <!-----------------------drive Dialogue box---------------------------->
+
+        <div class="driveItems boxSize">
+          <h4>Drive</h4>
+          <hr>
+          <p><i class="fa-brands fa-google-drive"></i>My Drive</p>
+          <p><i class="fa-solid fa-laptop"></i>Computers</p>
+          <p><i class="fa-solid fa-user-group"></i>Shared with me</p>
+          <p><i class="fa-solid fa-star"></i>Starred</p>
+          <button>Add shortcut</button>
+        </div>
+
+
+        <!------------------------------details dialogue box---------------------------------->
         <div id="details">
           <p>Document details</p>
           <span>Created on 28 Nov 2022</span>
         </div>
+
+        <!---------------------------------------------cloudIconDialogueBox----------------------------------------->
         <div class="cloud">
           <h4>All changes saved to Drive</h4>
           <div class="inner">
-            <span><i class="fa-solid fa-triangle-exclamation"></i>This document is not ready for offline use</span>
-          <p>If you lose your Internet connection, you can't edit this document. To access your documents without an Internet connection, turn on offline.</p>
-          <button>Turn on</button>
+            <span
+              ><i class="fa-solid fa-triangle-exclamation"></i>This document is
+              not ready for offline use</span
+            >
+            <p>
+              If you lose your Internet connection, you can't edit this
+              document. To access your documents without an Internet connection,
+              turn on offline.
+            </p>
+            <button>Turn on</button>
           </div>
         </div>
-        <!-- ---------------------------end------------- -->
+        <!----------------------------------------------- file dialogue box------------------------------------------ -->
+
+        <div class="fileItems boxSize margin_top">
+          <p><i class="fa-regular fa-file-lines"></i>New</p>
+          <p><i class="fa-regular fa-folder-open"></i>Open</p>
+          <p><i class="fa-regular fa-copy"></i>Make a copy</p>
+          <hr />
+          <p><i class="fa-solid fa-user-plus"></i>Share</p>
+          <p><i class="fa-regular fa-envelope"></i>Email</p>
+          <p><i class="fa-solid fa-download"></i>Download</p>
+          <hr />
+          <p><i class="fa-regular fa-pen-to-square"></i>Rename</p>
+          <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Move</p>
+          <p>
+            <i class="fa-brands fa-google-drive hover hidden visible"></i>Add a
+            Shortcut to Drive
+          </p>
+          <p><i class="fa-solid fa-trash-can"></i>Move to bin</p>
+          <hr />
+          <p><i class="fa-solid fa-clock-rotate-left"></i>Version history</p>
+          <p>
+            <i class="fa-regular fa-circle-check"></i>Make available offline
+          </p>
+          <p><i class="fa-solid fa-circle-info"></i>Details</p>
+          <p><i class="fa-solid fa-print"></i>Print</p>
+        </div>
+
+        <!----------------------------------------------- edit dialogue box------------------------------------------ -->
+        <div class="editItems boxSize margin_top">
+          <p>Copy <span>Ctrl + c</span></p>
+          <hr />
+          <p>Select All <span>Ctrl + A</span></p>
+        </div>
+        <!-----------------------------------------------view dialogue box------------------------------------------ -->
+        <div class="viewItems boxSize margin_top">
+          <p class="move">Mode</p>
+          <hr />
+          <p><i class="fa-solid fa-check"></i>Show Print Layout</p>
+          <p><i class="fa-solid fa-check"></i>Show Outline</p>
+          <p class="move">Show section breaks</p>
+          <hr />
+          <p><i class="fa-solid fa-magnifying-glass-plus"></i>Zoom</p>
+        </div>
+
+        <!------------------------------------------------tools dialogue box------------------------------------------------>
+        <div class="toolItems boxSize margin_top">
+          <p><i class="fa-regular fa-file-lines"></i>Word count</p>
+          <p><i class="fa-regular fa-message"></i>Review suggested edits</p>
+          <p><i class="fa-solid fa-arrow-right-arrow-left"></i>Compare documents</p>
+          <p><i class="fa-solid fa-quote-right"></i>Citations</p>
+          <p><i class="fa-solid fa-link"></i>Linked objects</p>
+          <hr>
+          <p><i class="fa-solid fa-person"></i>Accessibility</p>
+        </div>
+
+        <div class="helpItems boxSize margin_top">
+          <input type="text" id="input" placeholder="Search the menus (Alt+/)">
+          <hr>
+          <p><i class="fa-regular fa-circle-question"></i>Help</p>
+          <hr>
+          <p><i class="fa-solid fa-circle-exclamation"></i>Help Docs improve</p>
+          <p><i class="fa-solid fa-triangle-exclamation"></i>Report abuse</p>
+          <hr>
+          <p><i class="fa-regular fa-file-lines"></i>Privacy Policy</p>
+          <p><i class="fa-regular fa-file-lines"></i>Terms of Service</p>
+        </div>
+        <!-- ----------------------------------------------------end dialogue boxes---------------------------------------------------->
+
+        <!----------------------------------------------- right nav bar items------------------------------------------ -->
         <div class="right_nav">
-            <h5 class="request hidden" id="request">Request edit access</h5>
-            <div class="meetLogo hidden request" id="meet">
-              <img src="./Google_Meet.png" alt="google meet logo">
+          <h5 class="request hidden" id="request">Request edit access</h5>
+          <div class="meetLogo hidden request" id="meet">
+            <img src="./Google_Meet.png" alt="google meet logo" />
             <i class="fa-solid fa-caret-down"></i>
-            </div>
-            <button class="hidden"><i class="fa-solid fa-user "></i>Share</button>
-            <p>V</p>
+          </div>
+          <button class="hidden"><i class="fa-solid fa-user"></i>Share</button>
+          <p>V</p>
         </div>
       </div>
     </header>
+    <!----------------------------------------------------------end of header----------------------------------------------------------->
     <main>
-     <textarea></textarea>
+      <textarea></textarea>
     </main>
 
     <script src="script.js"></script>
