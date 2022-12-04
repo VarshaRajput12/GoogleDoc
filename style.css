@@ -1,102 +1,232 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-i{
-    cursor: pointer;
-    margin: 0 10px;
-    padding: 4px;
-    border-radius: 4px;
-    color: rgb(102, 96, 96);
+i {
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 4px;
+  border-radius: 4px;
+  color: rgb(102, 96, 96);
 }
 
-header{
-    padding: 1em;
-    border-bottom: 0.5px solid rgb(210, 203, 203);
-    color: rgb(78, 74, 74);
+header {
+  padding: 1em;
+  border-bottom: 0.5px solid rgb(210, 203, 203);
+  color: rgb(78, 74, 74);
 }
 
-.mainContainer{
-    display: flex;
-    justify-content: space-between;
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
-.left_nav{
-    display: flex;
+.left_nav {
+  display: flex;
+}
+
+.img {
+  margin: 0 10px;
+}
+
+.questions {
+  margin-left: 10px;
+  display: flex;
+}
+
+.buttons {
+  margin-top: 8px;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  opacity: 0.9;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.right_nav {
+  display: flex;
+  align-items: center;
+}
+.right_nav img {
+  height: 30px;
+}
+
+.right_nav button,
+.right_nav button i {
+  background: #1a73e8;
+  color: white;
+}
+.right_nav h5 {
+  color: rgb(58, 58, 232);
+  font-size: 1em;
+  border: 0.5px solid #b1c4dd;
+  padding: 0.5em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.right_nav p {
+  background-color: rgb(23, 177, 23);
+  padding: 1em;
+  color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.meetLogo {
+  border: 1px solid #e0e5eb;
+  border-radius: 2em;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.meetLogo i {
+  color: #1a73e8;
+  margin-left: -8px;
+}
+
+#arrow {
+  transform: rotate(180deg);
+}
+
+#details {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgb(174, 169, 169);
+  width: 200px;
+  height: 50px;
+  color: black;
+  line-height: 30px;
+  position: absolute;
+  background: white;
+  margin-top: 2%;
+  margin-left: 14%;
+  display: none;
+}
+
+
+.cloud {
+  width: 400px;
+  box-shadow: 0px 0px 4px rgb(174, 169, 169);
+  line-height: 18px;
+  display: none;
+}
+
+.cloud .inner {
+  padding: 10px;
+}
+
+.cloud .inner button {
+  background: #1a73e8;
+  color: white;
+  
+}
+.cloud p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.cloud h4 {
+  background: rgb(202, 226, 236);
+  color: blue;
+  padding: 15px;
+}
+
+.bars {
+  font-size: 1.5em;
+  display: none;
+  margin-top: 8px;
+}
+
+.display {
+  box-shadow: 0px 0px 4px rgb(174, 169, 169);
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 10vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  gap: 40px;
+
+}
+
+/* -------------------------------------------------------------------------main----------------------------------------------------------------------- */
+
+main {
+  max-width: 60%;
+  height: 100vh;
+  margin-left: 15%;
+  margin-top: 5%;
+  box-shadow: 0px 0px 4px rgb(144, 139, 139);
+  background: white;
+  padding: 5%;
+  position: relative;
+}
+
+textarea{
+    border: none;
+    outline: none;
+    width: 85%;
+    height: 100vh;
+    position: absolute;
+    font-size: 1em;
+ 
     
 }
 
-.img{
-    margin: 0 10px;
+/*------------------------------------------------------- mediaQuery for tab view--------------------------------------------------------------- */
+
+@media screen and (max-width: 1080px) {
+  .visible {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .questions h3 {
+    margin-top: 10px;
+  }
+
+  .display{
+    width: 20vw;
+    z-index: 10;
+  }
 }
 
-.questions{
-    margin-left: 10px;
-    display: flex;
-}
+/*------------------------------------------------------- mediaQuery for mobile view--------------------------------------------------------------- */
 
-
-.buttons{
-    margin-top: 8px;
-}
-
-button{
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    opacity: 0.9;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-.right_nav{
-   display: flex;
-   align-items: center;
-}
-.right_nav img{
-    height: 30px;
-}
-
-.right_nav button, .right_nav button i{
-    background: #1a73e8;
-    color: white;
-}
-.right_nav h5{
-    color: rgb(58, 58, 232);
-    font-size: 1em;
-    border: 0.5px solid #b1c4dd;
-    padding: 0.5em;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.right_nav p{
-    background-color: rgb(23, 177, 23);
-    padding: 1em;
-    color: white;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 1.2em;
-}
-
-.meetLogo{
-    border: 1px solid #e0e5eb;
-    border-radius: 2em;
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-.meetLogo i{
-    color: #1a73e8;
-    margin-left: -8px;
+@media screen and (max-width: 480px) {
+  .hidden {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .display{
+    width: 30vw;
+  }
+  
 }

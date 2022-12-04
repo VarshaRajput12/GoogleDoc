@@ -18,6 +18,7 @@
     <header>
       <div class="mainContainer">
         <div class="left_nav">
+          <i class="fa-solid fa-bars bars" id="bars"></i>
           <div class="img">
             <a href="https://docs.google.com/document/u/0/"
               ><img src="./googleDoc.png" alt="google doc"
@@ -27,12 +28,12 @@
           <div class="content">
             <div class="questions">
                 <h3>Web JavaScript</h3>
-                <i class="fa-solid fa-star hover" id="star"></i>
-                <i class="fa-brands fa-google-drive hover"></i>
-                <i class="fa-solid fa-right-to-bracket hover"></i>
-                <i class="fa-solid fa-cloud-arrow-up hover"></i>
+                <i class="fa-solid fa-star hover hidden visible" id="star"></i>
+                <i class="fa-brands fa-google-drive hover hidden visible"></i>
+                <i class="fa-solid fa-circle-exclamation hover hidden visible" id="arrow"></i>
+                <i class="fa-solid fa-cloud-arrow-up hover hidden visible" id="cloud"></i>
             </div>
-            <div class="buttons">
+            <div class="buttons hidden visible display">
               <button class="btn hover" id="btns">File</button>
               <button class="btn hover">Edit</button>
               <button class="btn hover">View</button>
@@ -44,17 +45,34 @@
             </div>
           </div>
         </div>
+        <!----------------------------------------- popUpThings------------------------------------ -->
+        <div id="details">
+          <p>Document details</p>
+          <span>Created on 28 Nov 2022</span>
+        </div>
+        <div class="cloud">
+          <h4>All changes saved to Drive</h4>
+          <div class="inner">
+            <span><i class="fa-solid fa-triangle-exclamation"></i>This document is not ready for offline use</span>
+          <p>If you lose your Internet connection, you can't edit this document. To access your documents without an Internet connection, turn on offline.</p>
+          <button>Turn on</button>
+          </div>
+        </div>
+        <!-- ---------------------------end------------- -->
         <div class="right_nav">
-            <h5 class="request" id="request">Request edit access</h5>
-            <div class="meetLogo request" id="meet">
+            <h5 class="request hidden" id="request">Request edit access</h5>
+            <div class="meetLogo hidden request" id="meet">
               <img src="./Google_Meet.png" alt="google meet logo">
             <i class="fa-solid fa-caret-down"></i>
             </div>
-            <button><i class="fa-solid fa-user"></i>Share</button>
+            <button class="hidden"><i class="fa-solid fa-user "></i>Share</button>
             <p>V</p>
         </div>
       </div>
     </header>
+    <main>
+     <textarea></textarea>
+    </main>
 
     <script src="script.js"></script>
   </body>
