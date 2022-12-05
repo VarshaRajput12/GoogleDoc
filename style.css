@@ -77,7 +77,7 @@ button {
   cursor: pointer;
 }
 
-.right_nav p {
+.right_nav h2{
   background-color: rgb(23, 177, 23);
   padding: 1em;
   color: white;
@@ -171,7 +171,7 @@ button {
 .driveItems h4{
   margin-left: 15px;
 }
-.driveItems button{
+.driveItems button, .blue{
   background: #1a73e8;
   float: right;
   color: white;
@@ -194,8 +194,8 @@ button {
   margin-left: 12%;
 }
 
-.move{
-  margin-left: 45px;
+.mode{
+  padding-left: 45px;
 }
 
 .toolItems{
@@ -229,8 +229,93 @@ button {
   background: white;
   z-index: 10;
   padding: 15px;
+  border-radius: 4px;
   display: none;
+
   
+}
+
+.request_edit_access{
+    width: 500px;
+    height: 40vh;
+    top: 30%;
+    left: 35%;
+
+   
+}
+
+
+.textArea, .textArea{
+  width: 95%;
+  height: 20vh;
+  margin: 5% 0;
+  border: none;
+  outline: none;
+  background: #edf0f3;
+  border-radius: 4px;
+  padding: 10px;
+
+}
+
+.request_edit_access h4{
+  font-size: 1.4em;
+}
+
+.meet_dialogue2{
+  margin-top: 3.1%;
+  margin-left: 65%;
+}
+
+
+.profile{
+  margin-left: 76%;
+  margin-top: 4%;
+}
+
+.dp{
+  position: relative;
+  margin: 10%;
+}
+
+.fa-camera{
+  position: absolute;
+  top: 45px;
+  left: 135px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgb(144, 139, 139);
+
+}
+
+.profile #manage{
+  border: 1px solid rgb(189, 180, 180);
+  margin: 5%;
+  padding: 10px;
+  border-radius: 20px;
+  
+}
+.profile #sign_out{
+  margin-left: 35%;
+  border: 1px solid rgb(195, 190, 190);
+  margin-top: 5%;
+}
+
+.inner{
+  text-align: center;
+}
+
+.profile .inner h2{
+  margin-left: 40%;
+  background-color: rgb(23, 177, 23);
+  padding: 1.5em;
+  color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
 }
 
 /* -------------------------------------------------------------------------main----------------------------------------------------------------------- */
@@ -246,7 +331,7 @@ main {
   position: relative;
 }
 
-textarea{
+main textarea{
     border: none;
     outline: none;
     width: 85%;
@@ -259,6 +344,18 @@ textarea{
 
 p{
   cursor: pointer;
+}
+
+.mobile_view{
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 100px;
+  font-size: 1.2em;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  
 }
 
 
@@ -295,5 +392,6 @@ p{
   .display{
     width: 30vw;
   }
+
   
 }

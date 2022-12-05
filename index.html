@@ -39,7 +39,7 @@
                 id="cloud"
               ></i>
             </div>
-            <div class="buttons hidden visible">
+            <div class="buttons hidden visible" id="buttons">
               <button class="btn hover" id="file">File</button>
               <button class="btn hover" id="edit">Edit</button>
               <button class="btn hover" id="view">View</button>
@@ -120,11 +120,11 @@
         </div>
         <!-----------------------------------------------view dialogue box------------------------------------------ -->
         <div class="viewItems boxSize margin_top">
-          <p class="move">Mode</p>
+          <p class="mode">Mode</p>
           <hr />
           <p><i class="fa-solid fa-check"></i>Show Print Layout</p>
           <p><i class="fa-solid fa-check"></i>Show Outline</p>
-          <p class="move">Show section breaks</p>
+          <p class="mode">Show section breaks</p>
           <hr />
           <p><i class="fa-solid fa-magnifying-glass-plus"></i>Zoom</p>
         </div>
@@ -140,6 +140,9 @@
           <p><i class="fa-solid fa-person"></i>Accessibility</p>
         </div>
 
+
+        <!---------------------------------------------------help dialogue box----------------------------------------->
+
         <div class="helpItems boxSize margin_top">
           <input type="text" id="input" placeholder="Search the menus (Alt+/)">
           <hr>
@@ -151,6 +154,52 @@
           <p><i class="fa-regular fa-file-lines"></i>Privacy Policy</p>
           <p><i class="fa-regular fa-file-lines"></i>Terms of Service</p>
         </div>
+
+        <!---------------right side dialogue boxes-------------->
+
+        <div class="request_edit_access boxSize">
+          <h4>Ask owner to be an editor for ‘Web Javascript’</h4>
+
+          <textarea  class="textArea" id="text" placeholder="Message"></textarea>
+          <div class="btns">
+            <button>Cancel</button>
+          <button class="blue">Send</button>
+          </div>
+        </div>
+
+        
+
+        <!-------------------------------------meet dialogue box------------------------------------>
+
+        <div class="meet_dialogue2 boxSize">
+          <h4>Join or start a meeting</h4>
+          <textarea class="textArea" id="meetBox">There is no upcoming meetings in your calendar today</textarea>
+          <p><i class="fa-regular fa-plus"></i>Start a new meeting</p>
+          <p><i class="fa-regular fa-keyboard"></i>Use a meeting code</p>
+        </div>
+
+        <!-------------------------profile dialogue box---------------------------->
+
+        <div class="profile boxSize">
+          <div class="inner">
+            
+            <div class="dp">
+              <h2>V</h2>
+            <i class="fa-solid fa-camera"></i>
+            </div>
+
+            <h4>Varsha Rajput</h4>
+            <span>varsharajput353@gmail.com</span>
+            <button id="manage">Manage your Google Account</button>
+            
+          </div>
+          <hr>
+            <p><i class="fa-solid fa-user-plus"></i>Add another account</p>
+            <hr>
+            <button id="sign_out">Sign out</button>
+            
+        </div>
+
         <!-- ----------------------------------------------------end dialogue boxes---------------------------------------------------->
 
         <!----------------------------------------------- right nav bar items------------------------------------------ -->
@@ -161,7 +210,7 @@
             <i class="fa-solid fa-caret-down"></i>
           </div>
           <button class="hidden"><i class="fa-solid fa-user"></i>Share</button>
-          <p>V</p>
+          <h2 id="profile">V</h2>
         </div>
       </div>
     </header>

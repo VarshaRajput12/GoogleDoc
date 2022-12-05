@@ -6,7 +6,7 @@ const arrow = document.querySelector("#arrow");
 const details = document.querySelector("#details");
 const cloud = document.querySelector(".cloud");
 const cloudClick = document.querySelector("#cloud");
-const bars = document.querySelector("#bars");
+
 const buttons = document.querySelectorAll(".buttons");
 
 const file = document.querySelector("#file");
@@ -29,10 +29,19 @@ const helpBox = document.querySelector(".helpItems");
 
 const pTags = document.querySelectorAll("p");
 
+const requestclick = document.querySelector("#request");
+const requestBox = document.querySelector(".request_edit_access");
+
+const body = document.querySelector("body");
+
+const meetLogo = document.querySelector(".meetLogo");
+const meetBox = document.querySelector(".meet_dialogue2");
+
+const profile = document.querySelector("#profile");
+const profileBox = document.querySelector(".profile");
 
 
-
-// console.log(helpBox);
+// hover effect on icons and buttons
 
 hover.forEach((element) => {
   element.addEventListener("mouseover", () => {
@@ -92,7 +101,6 @@ file.addEventListener("click", (e) => {
   }
 });
 
-
 // edit dialogue box
 
 edit.addEventListener("click", (e) => {
@@ -113,7 +121,6 @@ view.addEventListener("click", (e) => {
   }
 });
 
-
 // tools dialogue box
 
 tools.addEventListener("click", (e) => {
@@ -124,7 +131,6 @@ tools.addEventListener("click", (e) => {
   }
 });
 
-
 // drive dialogue box
 
 drive.addEventListener("click", (e) => {
@@ -134,8 +140,6 @@ drive.addEventListener("click", (e) => {
     driveBox.style.display = "block";
   }
 });
-
-
 
 // help dialogue box
 
@@ -160,3 +164,34 @@ pTags.forEach((ele) => {
     ele.style.backgroundColor = "transparent";
   });
 });
+
+//right side request dialogue box
+
+requestclick.addEventListener("click", (e) => {
+  if (requestBox.style.display == "block") {
+    requestBox.style.display = "none";
+  } else {
+    requestBox.style.display = "block";
+  }
+});
+
+// meet_dialogue2 dialogue box
+
+meetLogo.addEventListener("click", (e) => {
+  if (meetBox.style.display == "block") {
+    meetBox.style.display = "none";
+  } else {
+    meetBox.style.display = "block";
+  }
+});
+
+// profile dialogue box
+
+profile.addEventListener("click", (e) => {
+  if (profileBox.style.display == "block") {
+    profileBox.style.display = "none";
+  } else {
+    profileBox.style.display = "block";
+  }
+});
+
